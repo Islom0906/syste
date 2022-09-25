@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../fonts/Inter-Bold.ttf');
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.service__card {
+  background: url('../image/service/Rectangle\ 5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
