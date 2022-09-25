@@ -48,7 +48,7 @@
 <body>
   <div class="wrapper overflow-hidden">
     <header id="header" class="relative">
-      <div class="hidden py-2 text-zinc-900 md:block bg-neutral-100 ">
+      <div class="hidden py-2 text-zinc-900 md:block bg-gray-50 ">
         <div class="container flex justify-between mx-auto">
           <div>
             <a href="#" class="inline-flex items-center pr-5">
@@ -118,7 +118,7 @@
               </li>
               <li>
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                  class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown
+                  class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">Dropdown
                   <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -210,6 +210,7 @@
                 <br class="hidden md:block">
                 и сетевые компоненты Dell
               </h4>
+
               <button
                 class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
                 Подробнее
@@ -222,269 +223,438 @@
           </div>
         </div>
         <!-- Slider indicators -->
-        <div class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]">
+        <div class="absolute z-30 flex spac e-x-3 bottom-[15%] left-[13%]">
           <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md " aria-current="true"
             aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md"
-            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md"
-            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md" aria-current="false"
+            aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md" aria-current="false"
+            aria-label="Slide 3" data-carousel-slide-to="2"></button>
         </div>
-      </div </header>
-      <main>
-        <!-- section  -->
+      </div>
+    </header>
+    <main>
+      <!-- section  -->
 
-        <section class="md:py-20 py-10">
-          <div class="container mx-auto">
-            <div class="w-full md:w-3/4 mx-auto grid grid-cols-2 md:grid-cols-4  gap-4 md:gap-10 ">
-              <div class="flex justify-center items-center flex-col">
-                <img src="./project/image/icon-servicce/1.png" class="max-w-16 max-h-16 " alt="">
-                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
-                  терминалы <br>
-                  сбора данных</h2>
-              </div>
-              <div class="flex justify-center items-center flex-col">
-                <img src="./project/image/icon-servicce/2.png" class="max-w-16 max-h-16 " alt="">
-                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
-                  мобильные <br>
-                  pos системы
-              </div>
-              <div class="flex justify-center items-center flex-col">
-                <img src="./project/image/icon-servicce/3.png" class="max-w-16 max-h-16 " alt="">
-                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
-                  Cканеры <br>
-                  штрих-кодов</h2>
-              </div>
-              <div class="flex justify-center items-center flex-col">
-                <img src="./project/image/icon-servicce/4.png" class="max-w-16 max-h-16  " alt="">
-                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
-                  Принтеры для <br>
-                  печати этикеток
-                </h2>
-              </div>
+      <section class="md:py-20 py-10">
+        <div class="container mx-auto">
+          <div class="w-full md:w-full lg:w-3/4 mx-auto grid grid-cols-2 md:grid-cols-4  gap-4 md:gap-6 text-black">
+            <div
+              class="flex justify-center items-center flex-col hover:bg-zinc-100 py-5 px-4 rounded-lg ease-in duration-300">
+              <img src="./project/image/icon-servicce/1.png" class="max-w-16 max-h-16 " alt="">
+              <h2 class="md:text-xl text-lg lg:text-2xl mt-[10px]  md:mt-[15px] text-center font-medium ">
+                терминалы <br class="hidden md:block">
+                сбора данных</h2>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col hover:bg-zinc-100 py-5 px-4  rounded-lg ease-in duration-300">
+              <img src="./project/image/icon-servicce/2.png" class="max-w-16 max-h-16 " alt="">
+              <h2 class="md:text-xl text-lg lg:text-2xl mt-[10px]  md:mt-[15px] text-center font-medium ">
+                мобильные <br>
+                pos системы
+            </div>
+            <div
+              class="flex justify-center items-center flex-col hover:bg-zinc-100 py-5 px-4  rounded-lg ease-in duration-300">
+              <img src="./project/image/icon-servicce/3.png" class="max-w-16 max-h-16 " alt="">
+              <h2 class="md:text-xl text-lg lg:text-2xl mt-[10px]  md:mt-[15px] text-center font-medium ">
+                Cканеры <br>
+                штрих-кодов</h2>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col hover:bg-zinc-100 py-5 px-4  rounded-lg ease-in duration-300">
+              <img src="./project/image/icon-servicce/4.png" class="max-w-16 max-h-16  " alt="">
+              <h2 class="md:text-xl text-lg lg:text-2xl mt-[10px]  md:mt-[15px] text-center font-medium ">
+                Принтеры для <br>
+                печати этикеток
+              </h2>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- section  -->
+      <!-- section  -->
 
-        <!-- section  most-product -->
+      <!-- section  most-product -->
 
-        <!-- section  most-product -->
+      <!-- section  most-product -->
 
-        <!-- section Product -->
-        <section class="product md:py-20 py-10">
-          <div class="container mx-auto">
-            <h2 class="text-2xl mb-7 font-bold text-center">
-              Топ продаж
-            </h2>
-            <div class="swiper w-full mySwiper">
-              <div class="swiper-wrapper">
-                <div data-aos-delay="50" data-aos="fade-up"
-                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
-                  <div class="flex items-center justify-center">
-                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/1. Urovo i9100.png" alt="">
-                  </div>
-                  <div class=" ">
-                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
-                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
-                      Артикул товара: STD 810 G
-                    </p>
-                    <h2 class="text-lg md:text-xl font-semibold ">
-                      565$
-                    </h2>
-                  </div>
+      <!-- section Product -->
+      <section class="product md:py-20 py-10">
+        <div class="container mx-auto">
+          <h2 class="text-2xl mb-7 font-bold text-center">
+            Топ продаж
+          </h2>
+          <div class="swiper w-full mySwiper">
+            <div class="swiper-wrapper">
+              <div data-aos-delay="50" data-aos="fade-up"
+                class="swiper-slide h-full w-full  bg-gray-50 rounded-md md:p-6 p-5">
+                <div class="flex items-center justify-center">
+                  <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/1. Urovo i9100.png" alt="">
                 </div>
-                <div data-aos-delay="100" data-aos="fade-up"
-                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
-                  <div class="flex items-center justify-center">
-                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/2. Urovo RT40.png" alt="">
-                  </div>
-                  <div class=" ">
-                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
-                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
-                      Артикул товара: STD 810 G
-                    </p>
-                    <h2 class="text-lg md:text-xl font-semibold ">
-                      565$
-                    </h2>
-                  </div>
-                </div>
-                <div data-aos-delay="150" data-aos="fade-up"
-                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
-                  <div class="flex items-center justify-center">
-                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/3. Zebra DS8100.png" alt="">
-                  </div>
-                  <div class=" ">
-                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
-                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
-                      Артикул товара: STD 810 G
-                    </p>
-                    <h2 class="text-lg md:text-xl font-semibold ">
-                      565$
-                    </h2>
-                  </div>
-                </div>
-                <div data-aos-delay="200" data-aos="fade-up"
-                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
-                  <div class="flex items-center justify-center">
-                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/4. Honeywell PC42T.png"
-                      alt="">
-                  </div>
-                  <div class=" ">
-                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
-                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
-                      Артикул товара: STD 810 G
-                    </p>
-                    <h2 class="text-lg md:text-xl font-semibold ">
-                      565$
-                    </h2>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </section>
- <!-- section Product -->
-        <section class="md:py-20 py-10">
-          <div class="container mx-auto">
-            
-<div id="controls-carousel" class="relative" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="relative  h-[220px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg ">
-       <!-- Item 1 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-        <span
-              class=" absolute z-20 text-black  md:text-2xl  lg:text-4xl -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
-              <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
-                UROVO ET28
-              </h4>
-              <p class="mt-2.5 text-base lg:text-xl">
-                Терминал сбора данных <br class="hidden md:block">
-Функциональный и эргономичный
-              </p>
-            </span>
-          <img src="./project/image/2. Center Reklama Banner/Urovo.png" class="absolute object-cover block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 2 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-          <img src="./project/image/2. Center Reklama Banner/Urovo.png"  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 3 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-          <img src="./project/image/2. Center Reklama Banner/Urovo.png"  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-    
-  </div>
-
-  <div class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]">
-    <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md " aria-current="true"
-      aria-label="Slide 1" data-carousel-slide-to="0"></button>
-    <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md"
-      aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-    <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md"
-      aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-  </div>
-</div>
-
-          </div>
-        </section>
-
-        <!-- section Product-line -->
-        <section class="product-line lg:py-20 py-10">
-          <div class="container mx-auto">
-            <h2 data-aos="fade-up" data-aos-delay="50" class="text-2xl mb-7 font-bold text-center">
-              Наши продукции
-            </h2>
-            <div class="grid grid-cols-2 lg:gap-12 gap-8">
-              <div data-aos="fade-up" data-aos-delay="100"
-                class="bg-neutral-100 p-3 flex md:flex-row flex-col items-center justify-center rounded-lg">
-                <div class="text-center  md:order-1 order-2">
-                  <h2 class="text-lg md:text-2xl font-semibold">
-                    мобильные
-                    pos системы
-                  </h2>
-                  <button
-                    class="text-base normal-case md:uppercase border-2 order-1 border-zinc-900 px-3 py-2 mt-2 md:mt-5 md:px-4 md:py-2 lg:px-4 lg:py-4 lg:px-6 lg:text-sm rounded-large">
-                    О товаре
-                  </button>
-                </div>
-                <img class="w-full mb-3 md:mb-0 md:order-2 order-1 md:w-1/2 h-full max-w-72"
-                  src="./project/image/product/product6.png" alt="">
-              </div>
-              <div data-aos="fade-up" data-aos-delay="200"
-                class="bg-neutral-100 p-3 flex md:flex-row flex-col items-center justify-center rounded-lg">
-                <div class="text-center  md:order-1 order-2">
-                  <h2 class="text-lg md:text-2xl font-semibold">
-                    терминалы сбора
-                    данных
-                  </h2>
-                  <button
-                    class="text-base normal-case md:uppercase border-2 order-1 border-zinc-900 px-3 py-2 mt-2 md:mt-5 md:px-4 md:py-2 lg:px-4 lg:py-4 lg:px-6 lg:text-sm rounded-large">
-                    О товаре
-                  </button>
-                </div>
-                <img class="w-full mb-3 md:mb-0 md:order-2 order-1 md:w-1/2 h-full max-w-72"
-                  src="./project/image/product/product7.png" alt="">
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- section Product-line -->
-
-        <!-- section Product-item -->
-        <section class="product-item lg:py-20 py-10">
-          <div class="container mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
-              <div data-aos="fade-up" class="bg-neutral-100 pt-3">
-                <img class="w-full object-cover lg:h-72 md:h-60" src="./project/image/product/product2.png" alt="">
-                <div class="lg:px-9 lg:py-7 md:px-6 md:py-4 md:px-3 px-2">
-                  <h2 class="text-lg md:text-xl font-semibold">PM30hc</h2>
-                  <p class="text-sm my-1 md:my-2">
+                <div class=" ">
+                  <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                  <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
                     Артикул товара: STD 810 G
                   </p>
-                  <h2 class="text-lg md:text-xl font-semibold ">
+                  <h2 class="text-basese md:text-xl font-semibold ">
                     565$
                   </h2>
                 </div>
               </div>
+              <div data-aos-delay="100" data-aos="fade-up"
+                class="swiper-slide h-full w-full  bg-gray-50 rounded-md md:p-6 p-5">
+                <div class="flex items-center justify-center">
+                  <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/2. Urovo RT40.png" alt="">
+                </div>
+                <div class=" ">
+                  <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                  <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                    Артикул товара: STD 810 G
+                  </p>
+                  <h2 class="text-base md:text-xl font-semibold ">
+                    565$
+                  </h2>
+                </div>
+              </div>
+              <div data-aos-delay="150" data-aos="fade-up"
+                class="swiper-slide h-full w-full  bg-gray-50 rounded-md md:p-6 p-5">
+                <div class="flex items-center justify-center">
+                  <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/3. Zebra DS8100.png" alt="">
+                </div>
+                <div class=" ">
+                  <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                  <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                    Артикул товара: STD 810 G
+                  </p>
+                  <h2 class="text-base md:text-xl font-semibold ">
+                    565$
+                  </h2>
+                </div>
+              </div>
+              <div data-aos-delay="200" data-aos="fade-up"
+                class="swiper-slide h-full w-full  bg-gray-50 rounded-md md:p-6 p-5">
+                <div class="flex items-center justify-center">
+                  <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/4. Honeywell PC42T.png" alt="">
+                </div>
+                <div class=" ">
+                  <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                  <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                    Артикул товара: STD 810 G
+                  </p>
+                  <h2 class="text-base md:text-xl font-semibold ">
+                    565$
+                  </h2>
+                </div>
+              </div>
+
             </div>
           </div>
-        </section>
-        <!-- section Product-item -->
+        </div>
+      </section>
+      <!-- section Product -->
+      <section class="md:py-20 py-10">
+        <div class="container mx-auto">
 
-        <!-- section SERVICE -->
-        <section class="md:py-20 py-10 service">
-          <div class="container mx-auto">
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-12">
-              <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="50">
-                <img src="./project/image/service/shield 1.png" alt="">
-                <h2 class="text-lg md:text-xl font-semibold py-2">Спецификация</h2>
-                <p class="text-sm">
-                  Минимальные технические оборудования и требования к долговечности
-                </p>
+          <div id="controls-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative  h-[220px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg ">
+              <!-- Item 1 -->
+              <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                data-carousel-item="">
+                <span
+                  class=" absolute z-20 text-black  md:text-2xl  lg:text-4xl -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+                  <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
+                    UROVO ET28
+                  </h4>
+                  <p class="mt-2.5 text-sm  lg:text-xl">
+                    Терминал сбора данных <br>
+                    Функциональный и эргономичный
+                  </p>
+                </span>
+                <img src="./project/image/2. Center Reklama Banner/Urovo.png"
+                  class="absolute object-cover block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="...">
               </div>
-              <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                <img src="./project/image/service/qr-code 1.png" alt="">
-                <h2 class="text-lg md:text-xl font-semibold py-2">Зачисление</h2>
-                <p class="text-sm">
-                  Минимальные технические оборудования и требования к долговечности
-                </p>
+              <!-- Item 2 -->
+              <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                data-carousel-item="active">
+                <span
+                  class=" absolute z-20 text-black  md:text-2xl  lg:text-4xl -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+                  <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
+                    UROVO ET28
+                  </h4>
+                  <p class="md:mt-2.5 mt-2 text-sm lg:text-xl">
+                    Терминал сбора данных <br>
+                    Функциональный и эргономичный
+                  </p>
+                </span>
+                <img src="./project/image/2. Center Reklama Banner/Urovo.png"
+                  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
-              <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="150">
-                <img src="./project/image/service/security (1) 1.png" alt="">
-                <h2 class="text-lg md:text-xl font-semibold py-2">Безопасность</h2>
-                <p class="text-sm">
-                  Минимальные технические оборудования и требования к долговечности
+              <!-- Item 3 -->
+              <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+                data-carousel-item="">
+                <span
+                  class=" absolute z-20 text-black  md:text-2xl  lg:text-4xl -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+                  <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
+                    UROVO ET28
+                  </h4>
+                  <p class="mt-2.5  text-sm lg:text-xl">
+                    Терминал сбора данных <br>
+                    Функциональный и эргономичный
+                  </p>
+                </span>
+                <img src="./project/image/2. Center Reklama Banner/Urovo.png"
+                  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+
+            </div>
+
+            <div class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]" data-aos="fade-up">
+              <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md " aria-current="true"
+                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md" aria-current="false"
+                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md" aria-current="false"
+                aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- section Product-item -->
+      <section class="product-item lg:py-20 py-10">
+        <div class="container mx-auto">
+          <h2 class="text-2xl mb-7 font-bold text-center">
+            КАТАЛОГ ТОВАРОВ
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-12">
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/1. ÇTOL Smart Lite.png"
+                  alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
                 </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/2. Urovo I6310.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/3. Honeywell CN80.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/5. Idzor DS1700.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/6. Urovo DT50H.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/6. Urovo DT50H.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/7. Idzor DS1200.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/8. Ciontek Ch80.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/9. Point Mobile PM 75.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/10. Sunlux XL-9610.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/11. Point Mobile PM 70.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
+              </div>
+            </div>
+            <div data-aos-delay="10" data-aos="fade-up"
+              class="h-full w-full  bg-gray-50 rounded-lg md:p-6 p-3 border-2 border-gray-50 ease-in duration-1000 hover:border-slate-200 hover:border-2 ">
+              <div class="flex items-center justify-center">
+                <img class="max-w-48  max-h-52 " src="./project/image/4. Product Catalogs/12. MobileBase DS5.png" alt="">
+              </div>
+              <div class=" ">
+                <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                <p class="text-sm mt-2 md:mt-2.5  mb-2 md:mb-5">
+                  Артикул товара: STD 810 G
+                </p>
+                <h2 class="text-base md:text-xl font-semibold ">
+                  565$
+                </h2>
               </div>
             </div>
           </div>
-        </section>
-        <!-- section SERVICE -->
+          <div class="flex justify-center">
+            <button
+            class="text-base md:mt-20 mt-10 normal-case md:uppercase  bg-black hover:bg-gray-600 text-white px-4 py-2  md:px-8 md:py-4 rounded-large">
+            больше
+          </button>
+          </div>
+        </div>
+      </section>
+      <!-- section Product-item -->
 
-      </main>
+      <!-- section SERVICE -->
+      <section class="md:py-20 py-10 service">
+        <div class="container mx-auto">
+          <div class="grid md:grid-cols-3 grid-cols-1 gap-12">
+            <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="50">
+              <img src="./project/image/service/shield 1.png" alt="">
+              <h2 class="text-lg md:text-xl font-semibold py-2">Спецификация</h2>
+              <p class="text-sm">
+                Минимальные технические оборудования и требования к долговечности
+              </p>
+            </div>
+            <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="100">
+              <img src="./project/image/service/qr-code 1.png" alt="">
+              <h2 class="text-lg md:text-xl font-semibold py-2">Зачисление</h2>
+              <p class="text-sm">
+                Минимальные технические оборудования и требования к долговечности
+              </p>
+            </div>
+            <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="150">
+              <img src="./project/image/service/security (1) 1.png" alt="">
+              <h2 class="text-lg md:text-xl font-semibold py-2">Безопасность</h2>
+              <p class="text-sm">
+                Минимальные технические оборудования и требования к долговечности
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section SERVICE -->
+
+    </main>
 
 
   </div>
