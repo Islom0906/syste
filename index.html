@@ -1,286 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systemax</title>
-    <link href="./project/plugins/aos/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./project/plugins/flowbite/flowbite.css" />
 
-    <link rel="stylesheet" href="./project/plugins/swiper/swiper.css" />
-    <link href="./project/plugins/remixicon/remixicon.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systemax</title>
+  <link href="./project/plugins/aos/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./project/plugins/flowbite/flowbite.css" />
 
-    <script src="./project/plugins/tailwind/tailwind.js"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            container: {
-              padding: {
-                DEFAULT: "1rem",
-                sm: "2rem",
-              },
+  <link rel="stylesheet" href="./project/plugins/swiper/swiper.css" />
+  <link href="./project/plugins/remixicon/remixicon.css" rel="stylesheet" />
+
+  <script src="./project/plugins/tailwind/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
             },
-            colors: {
-              logoColor: "#F57F26",
-              bgColor: "#1B1B1B",
-              bgWhiteColor: "#F1F1f1",
-              titleText: "#414141",
-              borderColor: "#929292",
-              bgNavbar: "rgba(185, 185, 185, 0.1)",
-              galleyBg: "#929292",
-              partnersBg: "#F5F5F5",
-            },
-            borderRadius: {
-        
-            'large': '69px',
-            }
           },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="./project/css/style.css" />
-  </head>
+          colors: {
+            logoColor: "#F57F26",
+            bgColor: "#1B1B1B",
+            bgWhiteColor: "#F1F1f1",
+            titleText: "#414141",
+            borderColor: "#929292",
+            bgNavbar: "rgba(185, 185, 185, 0.1)",
+            galleyBg: "#929292",
+            serviceBg: "linear-gradient(90.45deg, rgba(212, 212, 216, 0.6) 0.39%, rgba(244, 244, 245, 0.6) 69.12%)",
+          },
+          borderRadius: {
 
-  <body>
-    <div class="wrapper overflow-hidden">
-      <header id="header" class="relative">
-        <div class="hidden py-2 text-zinc-900 md:block bg-neutral-100 ">
-          <div class="container flex justify-between mx-auto">
-            <div>
-              <a href="#"
-                class="inline-flex items-center pr-5"
-              >
-                <i class="ri-mail-fill text-xl mr-2"></i>
-                <p class="text-sm">998 (93) 541-1010</p>
-              </a>
-              <a href="#"
-                class="inline-flex items-center px-5 pr-10 "
-              >
+            'large': '69px',
+          }
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="./project/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper overflow-hidden">
+    <header id="header" class="relative">
+      <div class="hidden py-2 text-zinc-900 md:block bg-neutral-100 ">
+        <div class="container flex justify-between mx-auto">
+          <div>
+            <a href="#" class="inline-flex items-center pr-5">
+              <i class="ri-mail-fill text-xl mr-2"></i>
+              <p class="text-sm">998 (93) 541-1010</p>
+            </a>
+            <a href="#" class="inline-flex items-center px-5 pr-10 ">
               <i class="ri-phone-fill text-xl mr-2"></i>
-                <p  class="text-sm">info@systemax.uz</p>
-              </a>
-              <div class="inline-flex items-center">
-                <i class="ri-map-pin-2-fill text-xl mr-2"></i>
-                <p class="text-sm">Toshkent Zulfiyahonim 122</p>
-              </div>
+              <p class="text-sm">info@systemax.uz</p>
+            </a>
+            <div class="inline-flex items-center">
+              <i class="ri-map-pin-2-fill text-xl mr-2"></i>
+              <p class="text-sm">Toshkent Zulfiyahonim 122</p>
             </div>
-            <div class="flex items-center">
-              <div
-                class="inline-flex items-center px-5"h
-              >
-                <button
-                  id="dropdownDefault"
-                  data-dropdown-toggle="dropdown"
-                  class=" font-medium rounded-lg text-sm px-1 py-0.5 text-center inline-flex items-center"
-                  type="button"
-                >
+          </div>
+          <div class="flex items-center">
+            <div class="inline-flex items-center px-5" h>
+              <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                class=" font-medium rounded-lg text-sm px-1 py-0.5 text-center inline-flex items-center" type="button">
                 <i class="ri-global-line text-xl mr-2"></i>
-                  <p>ENG</p>
-                </button>
-                <!-- Dropdown menu -->
-                <div
-                  id="dropdown"
-                  class="hidden z-[99999] w-44 bg-white rounded divide-y divide-gray-100 shadow"
-                >
-                  <ul
-                    class="py-1 text-sm text-gray-700 "
-                    aria-labelledby="dropdownDefault"
-                  >
-                    <li>
-                      <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-                        >RU</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-                        >ENG</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                <p>ENG</p>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdown" class="hidden z-[99999] w-44 bg-white rounded divide-y divide-gray-100 shadow">
+                <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownDefault">
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100">RU</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100">ENG</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <nav class="navbar sticky top-0 right-0 md:top-[42px] w-full z-50  left-0 px-2 py-3 text-xs  bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
-          <div class="container flex flex-wrap justify-between items-center mx-auto">
+      </div>
+      <nav
+        class="navbar sticky top-0 right-0 md:top-[42px] w-full z-50  left-0 px-2 py-3 text-xs  bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="https://flowbite.com/" class="flex items-center">
-              <img src="./project/image/Logo.png" class="mr-3 h-6 sm:h-9" alt="Systemax" />
+            <img src="./project/image/Logo.png" class="mr-3 h-6 sm:h-9" alt="Systemax" />
           </a>
           <div class="flex md:order-2">
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Get started</button>
-              <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-cta" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6 text-zinc-900" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <button type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Get
+              started</button>
+            <button data-collapse-toggle="navbar-cta" type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+              aria-controls="navbar-cta" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6 text-zinc-900" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
             </button>
           </div>
           <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+            <ul
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
               <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-zinc-900 border-b-2 border-zinc-900 hover:border-b-2 md:p-0 " aria-current="page">Home</a>
+                <a href="#"
+                  class="block py-2 pr-4 pl-3 text-zinc-900 border-b-2 border-zinc-900 hover:border-b-2 md:p-0 "
+                  aria-current="page">Home</a>
               </li>
               <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown
+                  <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
                 <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow ">
-                    <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Dashboard</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Settings</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Earnings</a>
-                      </li>
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Sign out</a>
-                    </div>
+                <div id="dropdownNavbar"
+                  class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow ">
+                  <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Sign out</a>
+                  </div>
                 </div>
-    
+
               </li>
               <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                <a href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
               </li>
               <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                <a href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
               </li>
             </ul>
           </div>
-          </div>
-        </nav>
-        <div id="default-carousel" class="relative" data-carousel="static">
-          <!-- Carousel wrapper -->
-          <div class="relative h-[60vh] overflow-hidden -lg md:h-[94vh]">
-            <!-- Item 1 -->
-            <div
-              class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-              data-carousel-item=""
-            >
-            <span  
-            class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']"
-            >
-              <h4 data-aos="fade-down"  class="header__content   text-2xl font-semibold md:text-4xl">
+        </div>
+      </nav>
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[60vh] overflow-hidden -lg md:h-[94vh]">
+          <!-- Item 1 -->
+          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
+            data-carousel-item="">
+            <span
+              class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+              <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
                 Серверы, системы хранения
                 <br class="hidden md:block">
                 и сетевые компоненты Dell
               </h4>
-              <button class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
+              <button
+                class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
                 Подробнее
               </button>
-             
-            </span
-          >
-              <img
-              src="./project/image/header/Rectangle 1.png"
+
+            </span>
+            <img src="./project/image/header/Rectangle 1.png"
               class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <!-- Item 2 -->
-            <div
-            class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item=""
-          >
-          <span  
-            class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']"
-            >
-              <h4 data-aos="fade-down"  class="header__content   text-2xl font-semibold md:text-4xl">
+              alt="..." />
+          </div>
+          <!-- Item 2 -->
+          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
+            data-carousel-item="">
+            <span
+              class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+              <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
                 Серверы, системы хранения
                 <br class="hidden md:block">
                 и сетевые компоненты Dell
               </h4>
-              <button class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
+              <button
+                class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
                 Подробнее
               </button>
-             
-            </span
-          >
-            <img
-            src="./project/image/header/Rectangle 1.png"
+
+            </span>
+            <img src="./project/image/header/Rectangle 1.png"
               class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+              alt="..." />
           </div>
-            <!-- Item 3 -->
-            <div
-              class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-              data-carousel-item=""
-            >
-            <span  
-            class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']"
-            >
-              <h4 data-aos="fade-down"  class="header__content   text-2xl font-semibold md:text-4xl">
+          <!-- Item 3 -->
+          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
+            data-carousel-item="">
+            <span
+              class=" absolute z-20 text-2xl font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+              <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
                 Серверы, системы хранения
                 <br class="hidden md:block">
                 и сетевые компоненты Dell
               </h4>
-              <button class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
+              <button
+                class="text-base md:mt-14 mt-8 normal-case md:uppercase border-2 border-zinc-900 px-4 py-2  md:px-8 md:py-4 rounded-large">
                 Подробнее
               </button>
-             
-            </span
-          >
-              <img
-              src="./project/image/header/Rectangle 1.png"
-                class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
+
+            </span>
+            <img src="./project/image/header/Rectangle 1.png"
+              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..." />
           </div>
-          <!-- Slider indicators -->
-          <div
-            class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]"
-          >
-            <button
-              type="button"
-              class="w-6 h-6 bg-zinc-900 border border-zinc-900 rounded-full "
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-6 h-6 border border-zinc-900 rounded-full bg-zinc-900  hover:bg-zinc-600 "
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-6 h-6 border border-zinc-900 rounded-full  bg-zinc-900  hover:bg-zinc-600"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-          </div>
-        </div
-      </header>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]">
+          <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md " aria-current="true"
+            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md"
+            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md"
+            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+      </div </header>
       <main>
+        <!-- section  -->
+
+        <section class="md:py-20 py-10">
+          <div class="container mx-auto">
+            <div class="w-full md:w-3/4 mx-auto grid grid-cols-2 md:grid-cols-4  gap-4 md:gap-10 ">
+              <div class="flex justify-center items-center flex-col">
+                <img src="./project/image/icon-servicce/1.png" class="max-w-16 max-h-16 " alt="">
+                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
+                  терминалы <br>
+                  сбора данных</h2>
+              </div>
+              <div class="flex justify-center items-center flex-col">
+                <img src="./project/image/icon-servicce/2.png" class="max-w-16 max-h-16 " alt="">
+                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
+                  мобильные <br>
+                  pos системы
+              </div>
+              <div class="flex justify-center items-center flex-col">
+                <img src="./project/image/icon-servicce/3.png" class="max-w-16 max-h-16 " alt="">
+                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
+                  Cканеры <br>
+                  штрих-кодов</h2>
+              </div>
+              <div class="flex justify-center items-center flex-col">
+                <img src="./project/image/icon-servicce/4.png" class="max-w-16 max-h-16  " alt="">
+                <h2 class="md:text-xl text-lg lg:text-2xl mt-3 text-center font-medium ">
+                  Принтеры для <br>
+                  печати этикеток
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section  -->
+
+        <!-- section  most-product -->
+
+        <!-- section  most-product -->
+
+        <!-- section Product -->
+        <section class="product md:py-20 py-10">
+          <div class="container mx-auto">
+            <h2 class="text-2xl mb-7 font-bold text-center">
+              Топ продаж
+            </h2>
+            <div class="swiper w-full mySwiper">
+              <div class="swiper-wrapper">
+                <div data-aos-delay="50" data-aos="fade-up"
+                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
+                  <div class="flex items-center justify-center">
+                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/1. Urovo i9100.png" alt="">
+                  </div>
+                  <div class=" ">
+                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                      Артикул товара: STD 810 G
+                    </p>
+                    <h2 class="text-lg md:text-xl font-semibold ">
+                      565$
+                    </h2>
+                  </div>
+                </div>
+                <div data-aos-delay="100" data-aos="fade-up"
+                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
+                  <div class="flex items-center justify-center">
+                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/2. Urovo RT40.png" alt="">
+                  </div>
+                  <div class=" ">
+                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                      Артикул товара: STD 810 G
+                    </p>
+                    <h2 class="text-lg md:text-xl font-semibold ">
+                      565$
+                    </h2>
+                  </div>
+                </div>
+                <div data-aos-delay="150" data-aos="fade-up"
+                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
+                  <div class="flex items-center justify-center">
+                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/3. Zebra DS8100.png" alt="">
+                  </div>
+                  <div class=" ">
+                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                      Артикул товара: STD 810 G
+                    </p>
+                    <h2 class="text-lg md:text-xl font-semibold ">
+                      565$
+                    </h2>
+                  </div>
+                </div>
+                <div data-aos-delay="200" data-aos="fade-up"
+                  class="swiper-slide h-full w-full  bg-neutral-100 rounded-md md:p-6 p-3">
+                  <div class="flex items-center justify-center">
+                    <img class="max-w-48  max-h-52 " src="./project/image/3. Most Product/4. Honeywell PC42T.png"
+                      alt="">
+                  </div>
+                  <div class=" ">
+                    <h2 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">PM30hc</h2>
+                    <p class="text-sm mt-2 md:mt-2.5  mb-2.5 md:mb-5">
+                      Артикул товара: STD 810 G
+                    </p>
+                    <h2 class="text-lg md:text-xl font-semibold ">
+                      565$
+                    </h2>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+ <!-- section Product -->
+        <section class="md:py-20 py-10">
+          <div class="container mx-auto">
+            
+<div id="controls-carousel" class="relative" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative  h-[220px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg ">
+       <!-- Item 1 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+        <span
+              class=" absolute z-20 text-black  md:text-2xl  lg:text-4xl -translate-y-1/2 header__content  top-1/2 left-[13%] sm:text-3xl font-['Inter-Bold']">
+              <h4 data-aos="fade-down" class="header__content   text-2xl font-semibold md:text-4xl">
+                UROVO ET28
+              </h4>
+              <p class="mt-2.5 text-base lg:text-xl">
+                Терминал сбора данных <br class="hidden md:block">
+Функциональный и эргономичный
+              </p>
+            </span>
+          <img src="./project/image/2. Center Reklama Banner/Urovo.png" class="absolute object-cover block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+          <img src="./project/image/2. Center Reklama Banner/Urovo.png"  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+          <img src="./project/image/2. Center Reklama Banner/Urovo.png"  class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+    
+  </div>
+
+  <div class="absolute z-30 flex space-x-3 bottom-[15%] left-[13%]">
+    <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md " aria-current="true"
+      aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-[30px] h-[5px] bg-zinc-900 rounded-md"
+      aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-[30px] h-[5px] bg-zinc-900  rounded-md"
+      aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>
+</div>
+
+          </div>
+        </section>
+
+        <!-- section Product-line -->
+        <section class="product-line lg:py-20 py-10">
+          <div class="container mx-auto">
+            <h2 data-aos="fade-up" data-aos-delay="50" class="text-2xl mb-7 font-bold text-center">
+              Наши продукции
+            </h2>
+            <div class="grid grid-cols-2 lg:gap-12 gap-8">
+              <div data-aos="fade-up" data-aos-delay="100"
+                class="bg-neutral-100 p-3 flex md:flex-row flex-col items-center justify-center rounded-lg">
+                <div class="text-center  md:order-1 order-2">
+                  <h2 class="text-lg md:text-2xl font-semibold">
+                    мобильные
+                    pos системы
+                  </h2>
+                  <button
+                    class="text-base normal-case md:uppercase border-2 order-1 border-zinc-900 px-3 py-2 mt-2 md:mt-5 md:px-4 md:py-2 lg:px-4 lg:py-4 lg:px-6 lg:text-sm rounded-large">
+                    О товаре
+                  </button>
+                </div>
+                <img class="w-full mb-3 md:mb-0 md:order-2 order-1 md:w-1/2 h-full max-w-72"
+                  src="./project/image/product/product6.png" alt="">
+              </div>
+              <div data-aos="fade-up" data-aos-delay="200"
+                class="bg-neutral-100 p-3 flex md:flex-row flex-col items-center justify-center rounded-lg">
+                <div class="text-center  md:order-1 order-2">
+                  <h2 class="text-lg md:text-2xl font-semibold">
+                    терминалы сбора
+                    данных
+                  </h2>
+                  <button
+                    class="text-base normal-case md:uppercase border-2 order-1 border-zinc-900 px-3 py-2 mt-2 md:mt-5 md:px-4 md:py-2 lg:px-4 lg:py-4 lg:px-6 lg:text-sm rounded-large">
+                    О товаре
+                  </button>
+                </div>
+                <img class="w-full mb-3 md:mb-0 md:order-2 order-1 md:w-1/2 h-full max-w-72"
+                  src="./project/image/product/product7.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section Product-line -->
+
+        <!-- section Product-item -->
+        <section class="product-item lg:py-20 py-10">
+          <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
+              <div data-aos="fade-up" class="bg-neutral-100 pt-3">
+                <img class="w-full object-cover lg:h-72 md:h-60" src="./project/image/product/product2.png" alt="">
+                <div class="lg:px-9 lg:py-7 md:px-6 md:py-4 md:px-3 px-2">
+                  <h2 class="text-lg md:text-xl font-semibold">PM30hc</h2>
+                  <p class="text-sm my-1 md:my-2">
+                    Артикул товара: STD 810 G
+                  </p>
+                  <h2 class="text-lg md:text-xl font-semibold ">
+                    565$
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section Product-item -->
+
         <!-- section SERVICE -->
         <section class="md:py-20 py-10 service">
           <div class="container mx-auto">
             <div class="grid md:grid-cols-3 grid-cols-1 gap-12">
               <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="50">
                 <img src="./project/image/service/shield 1.png" alt="">
-                <h2 class="text-lg md:text-xl">Спецификация</h2>
+                <h2 class="text-lg md:text-xl font-semibold py-2">Спецификация</h2>
                 <p class="text-sm">
                   Минимальные технические оборудования и требования к долговечности
                 </p>
               </div>
               <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                <img src="./project/image/service/qr-code 1.png" alt="" >
-                <h2 class="text-lg md:text-xl">Зачисление</h2>
+                <img src="./project/image/service/qr-code 1.png" alt="">
+                <h2 class="text-lg md:text-xl font-semibold py-2">Зачисление</h2>
                 <p class="text-sm">
                   Минимальные технические оборудования и требования к долговечности
                 </p>
               </div>
               <div class="service__card px-10 py-8  rounded-lg" data-aos="fade-up" data-aos-delay="150">
                 <img src="./project/image/service/security (1) 1.png" alt="">
-                <h2 class="text-lg md:text-xl">Безопасность</h2>
+                <h2 class="text-lg md:text-xl font-semibold py-2">Безопасность</h2>
                 <p class="text-sm">
                   Минимальные технические оборудования и требования к долговечности
                 </p>
@@ -290,21 +483,21 @@
         </section>
         <!-- section SERVICE -->
 
-        <!-- section  -->
       </main>
 
-   
-    </div>
 
-    
+  </div>
 
-    <script src="./project/plugins/swiper/swipperJsBuld.js"></script>
-    <script src="./project/plugins/flowbite/flowbite.js"></script>
-    <script src="./project/js/swiper.js"></script>
-    <script src="./project/plugins/aos/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="./project/js/script.js"></script>
-  </body>
+
+
+  <script src="./project/plugins/swiper/swipperJsBuld.js"></script>
+  <script src="./project/plugins/flowbite/flowbite.js"></script>
+  <script src="./project/js/swiper.js"></script>
+  <script src="./project/plugins/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./project/js/script.js"></script>
+</body>
+
 </html>

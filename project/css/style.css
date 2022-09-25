@@ -9,12 +9,27 @@
 }
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
 }
 
 
 .service__card {
-  background: url('../image/service/Rectangle\ 5.png');
+  background: linear-gradient(90.45deg, rgba(212, 212, 216, 0.6) 0.39%, rgba(244, 244, 245, 0.6) 69.12%);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+@media screen and (max-width:765px) {
+  
+.most-product__card::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background:#EFEFEF;
+}
 }
