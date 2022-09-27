@@ -13,14 +13,6 @@
 }
 
 
-.service__card {
-  background: linear-gradient(90.45deg, rgba(212, 212, 216, 0.6) 0.39%, rgba(244, 244, 245, 0.6) 69.12%);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
 @media screen and (max-width:765px) {
   
 .most-product__card::before {
