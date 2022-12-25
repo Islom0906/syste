@@ -9,13 +9,37 @@ window.addEventListener("DOMContentLoaded" , () => {
   }, 2000);
 
   window.addEventListener('scroll' ,  () => {
-    let navbar = document.querySelector('.navbar-fixed');
+    let navbar = document.querySelector('.nav');
     navbar.classList.toggle('navbar-fixed-bg' , window.scrollY > 5);
     })
     
     
+
+    // length max-text
+  const textSection = document.querySelectorAll('.section__text');
+
   
-  
+
+    function textMaxLength(text) {
+      let textArr = text.split(' ')
+      if (textArr.length > 1) {
+        let sliceArr = textArr.slice(0, 49)
+        let joinAr=sliceArr.join(' ')
+        return joinAr + '...'
+      }else{
+        return text
+      }
+    
+    }
+    
+    textSection.forEach(item => {
+        console.log(item.textContent);
+        let maxText = ''
+        maxText = item.textContent
+        textMaxLength(maxText)
+        console.log(textMaxLength(maxText));
+    })
+
 
   });
 

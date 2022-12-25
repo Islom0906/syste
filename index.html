@@ -14,27 +14,27 @@
   <link href="./project/plugins/remixicon/remixicon.css" rel="stylesheet" />
 
   <script src="./project/plugins/tailwind/tailwind.js"></script>
-  <script src="./project/plugins/tailwind/tailwind.config"></script>    
+  <script src="./project/plugins/tailwind/tailwind.config.js"></script>    
   <link rel="stylesheet" href="./project/css/style.css" />
 </head>
 
 <body>
   
   <div class="overflow-hidden wrapper">
-    <div class="loader-wrapper">
+    <!-- <div class="loader-wrapper">
       <span class="loader"></span>
-    </div>
+    </div> -->
     <header id="header" class="relative">
 
-      <nav id="nav" class="navbar-fixed py-2.5 rounded-b fixed top-0 left-0 w-full z-[9999] bg-transparent">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex items-center">
-            <img src="./project/image/Logo.png" class="mr-3 h-6 sm:h-10" alt="AMIRAN">
+      <nav id="nav" class="nav navbar-fixed py-2 md:py-0 rounded-b fixed top-0 left-0 w-full z-[9999] bg-transparent">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="./index.html" class="flex items-center">
+            <img src="./project/image/Logo.png" class="h-6 mr-3 sm:h-10" alt="AMIRAN">
           </a>
           <div class="flex items-center md:order-2">
             <button type="button" data-dropdown-toggle="language-dropdown-menu"
-              class="inline-flex justify-center items-center p-2 text-sm text-white rounded cursor-pointer hover:bg-gray-800 ">
-              <svg class="mr-2 w-5 h-5 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              class="inline-flex items-center justify-center p-2 text-sm text-white rounded cursor-pointer hover:bg-gray-800 ">
+              <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
                 <path fill="#b22234" d="M0 0h7410v3900H0z"></path>
                 <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300">
@@ -70,7 +70,7 @@
               style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 10px);">
               <ul class="py-1" role="none">
                 <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
+                  <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 " role="menuitem">
                     <div class="inline-flex items-center">
                       <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
                         id="flag-icon-css-us" viewBox="0 0 512 512">
@@ -94,60 +94,20 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
+                  <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 " role="menuitem">
                     <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        id="flag-icon-css-de" viewBox="0 0 512 512">
-                        <path fill="#ffce00" d="M0 341.3h512V512H0z"></path>
-                        <path d="M0 0h512v170.7H0z"></path>
-                        <path fill="#d00" d="M0 170.7h512v170.6H0z"></path>
-                      </svg>
-                      Deutsch
+                     
+                      <img class="h-3.5 w-3.5 rounded-full mr-2" src="./project/image/header/Язык.png" alt="">
+                      Rus
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        id="flag-icon-css-it" viewBox="0 0 512 512">
-                        <g fill-rule="evenodd" stroke-width="1pt">
-                          <path fill="#fff" d="M0 0h512v512H0z"></path>
-                          <path fill="#009246" d="M0 0h170.7v512H0z"></path>
-                          <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"></path>
-                        </g>
-                      </svg>
-                      Italiano
-                    </div>
-                    
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
-                        <defs>
-                          <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"></path>
-                        </defs>
-                        <path fill="#de2910" d="M0 0h512v512H0z"></path>
-                        <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"></use>
-                        <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a">
-                        </use>
-                        <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"></use>
-                        <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a">
-                        </use>
-                        <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a">
-                        </use>
-                      </svg>
-                      中文 (繁體)
-                    </div>
-                  </a>
-                </li>
+                
+                
               </ul>
             </div>
             <button data-collapse-toggle="mobile-menu-language-select" type="button"
-              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 hover:bg-gray-900 rounded-lg md:hidden  focus:outline-none"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="mobile-menu-language-select" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -158,31 +118,57 @@
               </svg>
             </button>
           </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-language-select">
             <ul
-              class="flex flex-col p-4 mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+              class="flex flex-col p-4 mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:text-[18px]">
               <li>
                 <a href="./index.html"
-                  class="block py-2 pr-4 pl-3 text-white hover:bg-gray-900 rounded md:bg-transparent text-white md:p-0 md:hover:text-blue-700 capitalize "
-                  >главная</a>
+                class="block py-4 pl-3 pr-4 text-white capitalize duration-200 border-b border-transparent hover:border-white md:bg-transparent md:p-0 md:py-3 "
+                >главная</a>
               </li>
               <li>
                 <a href="./about.html"
                 aria-current="page"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 capitalize  ">о Нас</a>
+                class="block py-4 pl-3 pr-4 text-white capitalize duration-200 border-b border-transparent hover:border-white md:bg-transparent md:p-0 md:py-3 "
+                >о Нас</a>
               </li>
               <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between block py-4 pl-3 pr-4 text-white capitalize duration-200 border-b border-transparent hover:border-white md:bg-transparent md:p-0 md:py-3">фирмы <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-[#0F172A] text-white rounded divide-y  shadow ">
+                    <ul class="py-1 text-sm" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="./allFirma.html" class="block px-4 py-2 hover:bg-gray-800">Amiran Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">ProHome Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Wool Products</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Best Wool Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Best Food Company</a>
+                      </li>
+                    </ul>
+                   
+                </div>
                 <a href="./allFirma.html"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 capitalize ">фирмы</a>
+                class=""
+                ></a>
               </li>
               <li>
                 <a href="./blog.html"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  capitalize ">Блог</a>
+                class="block py-4 pl-3 pr-4 text-white capitalize duration-200 border-b border-transparent hover:border-white md:bg-transparent md:p-0 md:py-3 "
+                >Блог</a>
               </li>
               <li>
                 <a href="./contact.html"
-                aria-current="page" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  capitalize ">Контакт</a>
+                class="block py-4 pl-3 pr-4 text-white capitalize duration-200 border-b border-transparent hover:border-white md:bg-transparent md:p-0 md:py-3 "
+                >Контакт</a>
               </li>
             </ul>
           </div>
@@ -190,362 +176,198 @@
       </nav>
 
 
-      <div id="default-carousel" class="relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="relative h-[60vh] overflow-hidden -lg md:h-[94vh]">
-          <!-- Item 1 -->
-          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item="">
-            <!-- <div class=" w-full h-full">
-              <div class="container mx-auto h-full relative">
-                <span
-                  class=" w-full  absolute z-20 font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[10rem]  font-['Inter-Bold']">
-                  <h4 data-aos="fade-down"
-                    class="text-4xl font-semibold header__content md:text-7xl text-sky-500  mb-2 md:mb-5">
-                    PRO HOME
-                  </h4>
-                  <p class="text-xl md:text-4xl ">
-                    Передовые технологии <br class="sm:block hidden ">
-                    в сфере строительства
-                  </p>
-
-                </span>
-              </div> -->
-            </div>
-            <img src="./project/image/header/header-bg.jpg"
-              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..." />
-          </div>
-          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item="">
-            <!-- <div class=" w-full h-full">
-              <div class="container mx-auto h-full relative">
-                <span
-                  class=" w-full  absolute z-20 font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[2rem]  font-['Inter-Bold']">
-                  <h4 data-aos="fade-down"
-                    class="text-4xl font-semibold header__content md:text-7xl text-sky-500  mb-2 md:mb-5">
-                    PRO HOME
-                  </h4>
-                  <p class="text-xl md:text-4xl ">
-                    Передовые технологии <br class="sm:block hidden ">
-                    в сфере строительства
-                  </p>
-
-                </span>
-              </div>
-            </div> -->
-            <img src="./project/image/header/Rectangle 1.png"
-              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..." />
-          </div>
-          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item="">
-            <!-- <div class=" w-full h-full">
-              <div class="container mx-auto h-full relative">
-                <span
-                  class=" w-full  absolute z-20 font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[2rem]  font-['Inter-Bold']">
-                  <h4 data-aos="fade-down"
-                    class="text-4xl font-semibold header__content md:text-7xl text-sky-500  mb-2 md:mb-5">
-                    PRO HOME
-                  </h4>
-                  <p class="text-xl md:text-4xl ">
-                    Передовые технологии <br class="sm:block hidden ">
-                    в сфере строительства
-                  </p>
-
-                </span>
-              </div>
-            </div> -->
-            <img src="./project/image/header/Rectangle 1.png"
-              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..." />
-          </div>
-          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item="">
-            <!-- <div class=" w-full h-full">
-              <div class="container mx-auto h-full relative">
-                <span
-                  class=" w-full  absolute z-20 font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[2rem]  font-['Inter-Bold']">
-                  <h4 data-aos="fade-down"
-                    class="text-4xl font-semibold header__content md:text-7xl text-sky-500  mb-2 md:mb-5">
-                    PRO HOME
-                  </h4>
-                  <p class="text-xl md:text-4xl ">
-                    Передовые технологии <br class="sm:block hidden ">
-                    в сфере строительства
-                  </p>
-
-                </span>
-              </div>
-            </div> -->
-            <img src="./project/image/header/Rectangle 1.png"
-              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..." />
-          </div>
-          <div class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0"
-            data-carousel-item="">
-            <!-- <div class=" w-full h-full">
-              <div class="container mx-auto h-full relative">
-                <span
-                  class=" w-full  absolute z-20 font-semibold text-zinc-900 -translate-y-1/2 header__content  top-1/2 left-[2rem]  font-['Inter-Bold']">
-                  <h4 data-aos="fade-down"
-                    class="text-4xl font-semibold header__content md:text-7xl text-sky-500  mb-2 md:mb-5">
-                    PRO HOME
-                  </h4>
-                  <p class="text-xl md:text-4xl ">
-                    Передовые технологии <br class="sm:block hidden ">
-                    в сфере строительства
-                  </p>
-
-                </span>
-              </div>
-            </div> -->
-            <img src="./project/image/header/Rectangle 1.png"
-              class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..." />
-          </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button type="button" class=" w-[10px] h-[10px]  rounded-full transition duration-100 ease-out focus:ease-in"
-            aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class=" w-[10px] h-[10px]  rounded-full transition duration-100 ease-out focus:ease-in"
-            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class=" w-[10px] h-[10px]  rounded-full transition duration-100 ease-out focus:ease-in"
-            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-[10px] h-[10px]  rounded-full transition duration-100 ease-out focus:ease-in"
-            aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class=" w-[10px] h-[10px]  rounded-full transition duration-100 ease-out focus:ease-in"
-            aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-
-        </div>
-        <!-- Slider controls -->
-        <button type="button"
-          class="absolute top-0 left-[2.2rem] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev>
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-slate-800 group-hover:bg-slate-900  group-focus:ring-4 group-focus:ring-sky-400  group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button"
-          class="absolute top-0 right-[2.2rem] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next>
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-slate-800 group-hover:bg-slate-900 group-focus:ring-4 group-focus:ring-sky-400  group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
+      <video class="w-full h-screen" autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </header>
-    <main>
-      <!-- section About -->
+    <main class="bg-[url('./project/image/main-bg.png')] bg-no-repeat bg-cover">
+  
 
-      <section class="py-[45px] md:py-[90px] about text-white">
-        <div class="container mx-auto">
-          <h2 data-aos="fade-up" data-aos-delay="100"
-            class="text-xl md:text-3xl   font-bold text-center mb-5 md:mb-10 uppercase">
-            наши партнеры
-          </h2>
-          <p data-aos="fade-down" data-aos-delay="150" class="text-lg md:text-xl text-center font-normal mb-5 ">
-            Примечательная страница "О себе" - это подлинность, доступность и выдающийся характер. Это должно дать
-            посетителю представление о том, на что может быть похожа работа с вами и вашим бизнесом. Вы можете включить
-            личные интересы, истории и фотографии, которые передают уникальную
-            историю вашего бизнеса.
-          </p>
-          <!-- 
-          <h2 class="text-xl text-zinc-900 text-center font-semibold">
-          Zemfira Li, CEO
-          </h2> 
-        -->
-        </div>
-      </section>
 
-      <!-- section About -->
+         <!-- Section NEWS -->
 
-      <!-- section Product -->
-      <section class="py-[45px] product md:py-[90px]">
-        <div class="container mx-auto">
-          <h2 data-aos="fade-up" data-aos-delay="100"
-            class="text-xl md:text-3xl text-white  font-bold text-center mb-5 md:mb-10 uppercase">
-            НАШИ ФИРМЫ
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-8 ">
-            <a href="#" class=" product__item relative h-[300px] md:h-[510px]" data-aos="fade-right card-firma"
-              data-aos-delay="150">
-              <div
-                class="hidden product__hover absolute top-[5%] left-[5%] w-[90%] h-[90%] flex items-center justify-center">
-                <img class="w-[200px] h-[200px] object-contain " src="./project/image/firma/амиран груп.png" alt="">
+         <section class="py-[45px] md:py-[90px]">
+          <div class="container mx-auto">
+            <div class="flex items-center justify-between mb-5 md:mb-10 section__header">
+              <h2 data-aos="fade-up" data-aos-delay="100"
+                class="relative text-xl font-bold text-left uppercase text-currentColor lg:text-5xl md:text-3xl section-title">
+                УСЛУГИ
+              </h2>
+              <div class="section__header-line w-[80%] bg-gold" data-aos="fade-left" data-aos-delay="500" >
               </div>
-              <img class=" w-full h-full object-cover" src="./project/image/firma/Rectangle 7.png" alt="">
-            </a>
-            <div class="grid grid-cols-2 gap-2 md:gap-4 lg:gap-8">
-              <a href="#" class="h-[240px] product__item" data-aos="fade-up" data-aos-delay="100">
-                <div
-                  class="hidden product__hover absolute top-[5%] left-[5%] w-[90%] h-[90%] flex items-center justify-center">
-                  <img class="w-[200px] h-[200px] object-contain " src="./project/image/firma/pro home.png" alt="">
+            </div>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-12 ">
+  
+              
+            <div data-aos="fade-down"  data-aos-delay="40"
+              class="max-w-sm mx-auto transition-all duration-500 border-0">
+              <a href="#" class="border-0 ">
+                <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
+                <div class="p-3 space-y-4 border-l-[7px] bg-currentColor border-gold">
+                  <h5 class="text-lg font-bold tracking-tight text-white md:text-xl card__title">
+                    Noteworthy technology acquisitionsdaasdadadwadwda
+                    2021
+                  </h5>
+                  <p class=" text-base font-normal text-white section__text text-[#DBDBDB] mt-4">
+                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> 
+                  <div class="flex justify-end ">
+                    <a href="#" class="flex items-center space-x-2">
+                      <span class="text-sm text-gold">
+                        Подробно
+                      </span>
+                      <span class="flex items-center justify-center p-1 rounded-full bg-gold">
+                        <i class="text-white ri-arrow-right-s-line"></i>
+                      </span>
+                    </a>
+                  </div>
                 </div>
-                <img class="w-full h-full object-cover" src="./project/image/firma/Rectangle 10.png" alt="">
-              </a>
-              <a href="#" class="h-[240px]  product__item" data-aos="fade-up" data-aos-delay="150">
-                <div
-                  class="hidden product__hover absolute top-[5%] left-[5%] w-[90%] h-[90%] flex items-center justify-center">
-                  <img class="w-[200px] h-[200px] object-contain " src="./project/image/firma/wool products.png" alt="">
-                </div>
-                <img class="w-full h-full object-cover" src="./project/image/firma/Rectangle 11.png" alt="">
-              </a>
-              <a href="#" class="h-[240px] product__item" data-aos="fade-up" data-aos-delay="250">
-                <div
-                  class="hidden product__hover absolute top-[5%] left-[5%] w-[90%] h-[90%] flex items-center justify-center">
-                  <img class="w-[200px] h-[200px] object-contain " src="./project/image/firma/best wool.png" alt="">
-                </div>
-                <img class="w-full h-full object-cover" src="./project/image/firma/Rectangle 9.png" alt="">
-              </a>
-              <a href="#" class="h-[240px] product__item" data-aos="fade-up" data-aos-delay="350">
-                <div
-                  class="hidden product__hover absolute top-[5%] left-[5%] w-[90%] h-[90%] flex items-center justify-center">
-                  <img class="w-[200px] h-[200px] object-contain " src="./project/image/firma/best food.png" alt="">
-                </div>
-                <img class="w-full h-full object-cover" src="./project/image/firma/Rectangle 12.png" alt="">
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- section Product -->
-
-      <!-- Section NEWS -->
-
-      <section class="py-[45px] md:py-[90px]">
-        <div class="container mx-auto">
-          <h2 data-aos="fade-up" data-aos-delay="100"
-            class="text-xl md:text-3xl text-white font-bold text-center mb-5 md:mb-10 uppercase">
-            Еженедельные новости
-          </h2>
-          <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 md:gap-12 gap-8 ">
-
-            
             <div data-aos="fade-down"  data-aos-delay="40"
-            class="max-w-sm border-0   mx-auto transition-all duration-500">
-            <a href="#" class=" border-0">
-              <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
-              <div class="pt-3">
-                <span>
-                  <div class="text-slate-400 flex items-center mb-2">
-                    <i class="ri-calendar-todo-line text-lg mr-2"></i>
-                    <p class="text-sm">14 Октябрь 2022</p>
+              class="max-w-sm mx-auto transition-all duration-500 border-0">
+              <a href="#" class="w-full border-0">
+                <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
+                <div class="p-3 space-y-4 border-l-[7px] bg-currentColor border-gold">
+                  <h5 class="text-lg font-bold tracking-tight text-white md:text-xl card__title">
+                    Noteworthy technology acquisitionsdaasdadadwadwda
+                    2021
+                  </h5>
+                  <p class=" text-base font-normal text-white section__text text-[#DBDBDB] mt-4">
+                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> 
+                  <div class="flex justify-end ">
+                    <a href="#" class="flex items-center space-x-2">
+                      <span class="text-sm text-gold">
+                        Подробно
+                      </span>
+                      <span class="flex items-center justify-center p-1 rounded-full bg-gold">
+                        <i class="text-white ri-arrow-right-s-line"></i>
+                      </span>
+                    </a>
                   </div>
-                </span>
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-white">
-                  Noteworthy technology acquisitions
+                </div>
+              </a>
+            </div>
+            <div data-aos="fade-down"  data-aos-delay="40"
+            class="max-w-sm mx-auto transition-all duration-500 border-0">
+            <a href="#" class="border-0 ">
+              <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
+              <div class="p-3 space-y-4 border-l-[7px] bg-currentColor border-gold">
+                <h5 class="text-lg font-bold tracking-tight text-white md:text-xl card__title">
+                  Noteworthy technology acquisitionsdaasdadadwadwda
                   2021
                 </h5>
-                <p class="mb-10 text-base font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                
-                <a href="#" class="relative inline-flex items-center justify-center py-3 px-4 overflow-hidden font-mono font-medium tracking-tighter text-white hover:text-slate-900 border border-white bg-transparent group">
-                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
-                  <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-50 "></span>
-                  <span class="relative">Подробнее</span>
+                <p class=" text-base font-normal text-white section__text text-[#DBDBDB] mt-4">
+                  Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> 
+                <div class="flex justify-end ">
+                  <a href="#" class="flex items-center ">
+                    <span class="text-sm text-gold">
+                      Подробно
+                    </span>
+                    <span class="p-1 rounded-full bg-gold">
+                      <i class="text-currentColor ri-arrow-right-s-line"></i>
+                    </span>
                   </a>
+                </div>
               </div>
             </a>
           </div>
-          <div data-aos="fade-down"  data-aos-delay="40"
-            class="max-w-sm border-0   mx-auto transition-all duration-500">
-            <a href="#" class=" border-0">
-              <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
-              <div class="pt-3">
-                <span>
-                  <div class="text-slate-400 flex items-center mb-2">
-                    <i class="ri-calendar-todo-line text-lg mr-2"></i>
-                    <p class="text-sm">14 Октябрь 2022</p>
-                  </div>
-                </span>
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-white">
-                  Noteworthy technology acquisitions
-                  2021
-                </h5>
-                <p class="mb-10 text-base font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                
-                <a href="#" class="relative inline-flex items-center justify-center py-3 px-4 overflow-hidden font-mono font-medium tracking-tighter text-white hover:text-slate-900 border border-white bg-transparent group">
-                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
-                  <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-50 "></span>
-                  <span class="relative">Подробнее</span>
-                  </a>
-              </div>
-            </a>
+  
+            </div>
           </div>
-          <div data-aos="fade-down"  data-aos-delay="40"
-            class="max-w-sm border-0   mx-auto transition-all duration-500">
-            <a href="#" class=" border-0">
-              <img class="w-full max-h-45 border-0 h-[250px] object-cover" src="./project/image/blogPage/blog3.png" alt="">
-              <div class="pt-3">
-                <span>
-                  <div class="text-slate-400 flex items-center mb-2">
-                    <i class="ri-calendar-todo-line text-lg mr-2"></i>
-                    <p class="text-sm">14 Октябрь 2022</p>
-                  </div>
-                </span>
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-white">
-                  Noteworthy technology acquisitions
-                  2021
-                </h5>
-                <p class="mb-10 text-base font-normal text-white">Here are the biggest enterprise technology
-                  acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                
-                <a href="#" class="relative inline-flex items-center justify-center py-3 px-4 overflow-hidden font-mono font-medium tracking-tighter text-white hover:text-slate-900 border border-white bg-transparent group">
-                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
-                  <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-50 "></span>
-                  <span class="relative">Подробнее</span>
-                  </a>
-              </div>
-            </a>
-          </div>
+        </section>
+  
+        <!-- Section NEWS -->
 
-          </div>
-        </div>
-      </section>
+          <!-- section About -->
 
-      <!-- Section NEWS -->
+          <section class="py-[45px] md:py-[90px] about text-white bg-[url('./project/image/about/bg-about.png')] bg-cover">
+            <div class="container mx-auto">
+              <div class="flex items-center justify-between mb-5 md:mb-10 section__header">
+                <h2 data-aos="fade-up" data-aos-delay="100"
+                  class="relative text-xl font-bold text-left text-white uppercase lg:text-5xl md:text-3xl section-title">
+                  о нашей компании
+                </h2>
+                
+              </div>
+              <p data-aos="fade-down" data-aos-delay="150" class="text-lg md:text-xl text-center font-normal mb-5 md:leading-[3rem]">
+                Примечательная страница "О себе" - это подлинность, доступность и выдающийся характер. Это должно дать
+                посетителю представление о том, на что может быть похожа работа с вами и вашим бизнесом. Вы можете включить
+                личные интересы, истории и фотографии, которые передают уникальную
+                историю вашего бизнеса.
+              </p>
+              <!-- 
+              <h2 class="text-xl font-semibold text-center text-zinc-900">
+              Zemfira Li, CEO
+              </h2> 
+            -->
+            </div>
+          </section>
+    
+          <!-- section About -->
+
+   
       <!-- section Partner -->
       <section class="py-[45px] product md:py-[90px]">
         <div class="container mx-auto">
-          <h2 data-aos="fade-up" data-aos-delay="100"
-            class="text-xl md:text-3xl text-white font-bold text-center mb-10 uppercase">
-            наши партнеры
-          </h2>
+          <div class="flex items-center justify-between mb-5 md:mb-10 section__header">
+            <h2 data-aos="fade-up" data-aos-delay="100"
+              class="relative text-xl font-bold text-left uppercase text-currentColor lg:text-5xl md:text-3xl section-title">
+              Клиентам и партнерам
+            </h2>
+            <div class="section__header-line w-[80%] bg-gold" data-aos="fade-left" data-aos-delay="500" >
+            </div>
+          </div>
           <div class="w-full swiper mySwiper">
             <div class="swiper-wrapper">
               <div data-aos-delay="50" data-aos="fade-up"
-                class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
                 <div class="flex items-center justify-center">
                   <img class="w-full h-[200px] object-cover " src="./project/image/partner/Rectangle 147.png" alt="">
                 </div>
               </div>
               <div data-aos-delay="100" data-aos="fade-up"
-                class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
                 <div class="flex items-center justify-center">
                   <img class="w-full h-[200px] object-cover  " src="./project/image/partner/Rectangle 148.png" alt="">
                 </div>
               </div>
               <div data-aos-delay="150" data-aos="fade-up"
-                class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
+                <div class="flex items-center justify-center">
+                  <img class="w-full h-[200px] object-cover " src="./project/image/partner/Rectangle 149.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-[45px] product md:py-[90px]">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between mb-5 md:mb-10 section__header">
+            <h2 data-aos="fade-up" data-aos-delay="100"
+              class="relative text-xl font-bold text-left uppercase text-currentColor lg:text-5xl md:text-3xl section-title">
+              Клиентам и партнерам
+            </h2>
+            <div class="section__header-line w-[80%] bg-gold" data-aos="fade-left" data-aos-delay="500" >
+            </div>
+          </div>
+          <div class="w-full swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div data-aos-delay="50" data-aos="fade-up"
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
+                <div class="flex items-center justify-center">
+                  <img class="w-full h-[200px] object-cover " src="./project/image/partner/Rectangle 147.png" alt="">
+                </div>
+              </div>
+              <div data-aos-delay="100" data-aos="fade-up"
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
+                <div class="flex items-center justify-center">
+                  <img class="w-full h-[200px] object-cover  " src="./project/image/partner/Rectangle 148.png" alt="">
+                </div>
+              </div>
+              <div data-aos-delay="150" data-aos="fade-up"
+                class="w-full h-full duration-1000 ease-in rounded-md swiper-slide">
                 <div class="flex items-center justify-center">
                   <img class="w-full h-[200px] object-cover " src="./project/image/partner/Rectangle 149.png" alt="">
                 </div>
@@ -558,65 +380,62 @@
 
 
       <!-- contact -->
-      <section class="pt-[45px] product md:pt-[90px] container-fluid">
-        <div class="grid grid-cols-1  md:grid-cols-2 ">
+      <section class="pt-[45px] product md:pt-[90px] container-fluid bg-[#0F172A]">
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
           <iframe class="w-full h-[450px]  md:h-full order-2 md:order-1 "
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5991.976095065031!2d69.26447258487183!3d41.33087326714791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8beed2933741%3A0x3dfb3b396610041!2z0JTQuNC30LDQudC9INC40L3RgtC10YDRjNC10YAg0LIg0KPQt9Cx0LXQutC40YHRgtCw0L3QtSAiQVIgRGVzaWduIg!5e0!3m2!1sru!2s!4v1664823492086!5m2!1sru!2s"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="order-1 md:order-2">
+          <div class="order-1 md:order-2 border-b border-b-[#B18F62]">
             <img class="w-full h-[280px] object-cover" src="./project/image/about/Rectangle 14.png">
-            <div class="bg-slate-900 p-6 lg:p-10">
-              <h3 class="text-2xl uppercase font-medium text-[#B18F62]">Наши офис</h3>
-              <h5 class="text-xl my-7 font-semibold text-[#B18F62]">Ташкент</h5>
-              <div class="flex items-center my-6 text-white">
-                <i class="ri-map-pin-2-fill text-2xl mr-4 text-[#B18F62]"></i>
-                <p class="text-base">
+            <div class="p-6 bg-slate-900 lg:p-10">
+              <h3 class="text-2xl uppercase font-bold text-[#B18F62] ">Наши офис</h3>
+              <div class="flex items-center my-4 ">
+                <i class="mr-4 text-2xl ri-map-pin-2-fill text-[#B18F62]"></i>
+                <p class="text-base text-white">
                   Узбекистан, г Ташкент, Зулфияхоним 124
                 </p>
               </div>
               <div class="flex flex-col md:flex-row">
-                <div class="flex items-center my-6 md:mr-10 text-white">
-                  <i class="ri-phone-fill text-2xl mr-4 text-[#B18F62]"></i>
-                  <p class="text-base">
+                <div class="flex items-center my-4 md:mr-10 ">
+                  <i class="mr-4 text-2xl text-[#B18F62] ri-phone-fill "></i>
+                  <p class="mr-4 text-base text-white">
                     998 (93) 541-10-11
                   </p>
-                </div>
-                <div class="flex items-center my-6 text-white">
-                  <i class="ri-mail-fill text-2xl mr-4 text-[#B18F62]"></i>
-                  <p class="text-base">
-                    info@systemax.uz
+                  <p class="text-base text-white">
+                    998 (93) 541-10-11
+
+                    
                   </p>
                 </div>
+              
+              </div>
+              <div class="flex items-center my-4 ">
+                <i class="mr-4 text-[#B18F62] text-2xl ri-mail-fill "></i>
+                <p class="text-base text-white">
+                  info@kebzu.uz
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
-      <!-- contact -->
-
-
-
-
-
     </main>
 
 
-    <footer class=" bg-slate-900 md:pt-[60px] pt-7 pb-5 relative">
-      <a href="#nav" class="bg-white py-2 px-3 rounded-full flex justify-center items-center inline-flex absolute right-8 top-[60px] text-white">
-        <i class="ri-arrow-up-s-line text-slate-900 text-3xl"></i>
+    <footer class=" bg-slate-900 md:pt-[60px] pt-7 pb-5 relative bg-[#0F172A]">
+      <a href="#header" class="bg-white scroll-smooth py-2 px-3 rounded-full flex justify-center items-center inline-flex absolute right-8 top-[60px] text-white">
+        <i class="text-3xl ri-arrow-up-s-line text-slate-900"></i>
       </a>
       <div class="container mx-auto">
         <div class="flex flex-col md:flex-row md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="#" class="flex items-center">
-              <img src="./project/image/logo.png" class="mr-3 h-10" alt="AMIRAN">
+              <img src="./project/image/logo.png" class="h-10 mr-3" alt="AMIRAN">
             </a>
           </div>
-          <div class="sm:w-full md:w-3/4 grid grid-cols-2 gap-8 sm:grid-cols-3">
-            <div class=" col-span-2 sm:col-span-1" >
+          <div class="grid grid-cols-2 gap-8 sm:w-full md:w-3/4 sm:grid-cols-3">
+            <div class="col-span-2 sm:col-span-1" >
               <h2 class="mb-6 text-sm font-semibold text-white uppercase ">Amiran Group</h2>
               <ul class="text-white ">
                 <li class="mb-2.5">
@@ -668,17 +487,21 @@
           </div>
 
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8">
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
 
       </div>
       <div class="container mx-auto">
-        <div class="sm:flex sm:items-center sm:justify-between text-white">
-          <span class="text-sm  sm:text-center ">© 2022 <a href="#" class="hover:underline">AMIRAN</a> все
+        <div class="text-white sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm sm:text-center ">© 2022 <a href="#" class="hover:underline">AMIRAN</a> все
             права защищены
           </span>
-          <span class="text-sm  sm:text-center "> Создания сайта Веб студия <a href="#"
-              class="hover:underline">MARSS TEAM</a>
-          </span>
+          <div class="flex items-center sm:text-center">
+            <span class="mr-2 text-sm"> Создания сайта Веб студия 
+            </span>
+            <a href="#"
+                class="hover:underline"><img class="w-20 h-8" src="./project/image/MT.png" alt="">
+            </a>
+          </div>
 
         </div>
       </div>

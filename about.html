@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./project/css/style.css" />
 </head>
 
-<body>
+<body class="scroll-smooth">
   
   <div class="overflow-hidden wrapper">
     <div class="loader-wrapper">
@@ -28,7 +28,7 @@
 
       <nav id="nav" class="navbar-fixed fixed py-2.5 rounded-b top-0 left-0 w-full z-[9999] bg-[#0F172A]">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex items-center">
+          <a href="./index.html" class="flex items-center">
             <img src="./project/image/Logo.png" class="mr-3 h-6 sm:h-10" alt="AMIRAN">
           </a>
           <div class="flex items-center md:order-2">
@@ -96,53 +96,14 @@
                 <li>
                   <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
                     <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        id="flag-icon-css-de" viewBox="0 0 512 512">
-                        <path fill="#ffce00" d="M0 341.3h512V512H0z"></path>
-                        <path d="M0 0h512v170.7H0z"></path>
-                        <path fill="#d00" d="M0 170.7h512v170.6H0z"></path>
-                      </svg>
-                      Deutsch
+                     
+                      <img class="h-3.5 w-3.5 rounded-full mr-2" src="./project/image/header/Язык.png" alt="">
+                      Rus
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        id="flag-icon-css-it" viewBox="0 0 512 512">
-                        <g fill-rule="evenodd" stroke-width="1pt">
-                          <path fill="#fff" d="M0 0h512v512H0z"></path>
-                          <path fill="#009246" d="M0 0h170.7v512H0z"></path>
-                          <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"></path>
-                        </g>
-                      </svg>
-                      Italiano
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-gray-800 " role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
-                        <defs>
-                          <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"></path>
-                        </defs>
-                        <path fill="#de2910" d="M0 0h512v512H0z"></path>
-                        <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"></use>
-                        <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a">
-                        </use>
-                        <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"></use>
-                        <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a">
-                        </use>
-                        <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a">
-                        </use>
-                      </svg>
-                      中文 (繁體)
-                    </div>
-                  </a>
-                </li>
+                
+                
               </ul>
             </div>
             <button data-collapse-toggle="mobile-menu-language-select" type="button"
@@ -160,27 +121,54 @@
           <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-language-select">
             <ul
-              class="flex flex-col p-4 mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+              class="flex flex-col p-4 mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:text-[18px]">
               <li>
                 <a href="./index.html"
-                  class="block py-2 pr-4 pl-3 text-white bg-gray-100 rounded md:bg-transparent text-white md:p-0 md:hover:text-blue-700 capitalize ">главная</a>
+                class="block py-4 border-b border-transparent duration-200 hover:border-white pr-4 pl-3 text-white md:bg-transparent text-white md:p-0  md:py-3 capitalize "
+                >главная</a>
               </li>
               <li>
-                <a href="./about.html" aria-current="page"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 capitalize  ">о
-                  Нас</a>
+                <a href="./about.html"
+                aria-current="page"
+                class="block py-4 border-b border-transparent duration-200 hover:border-white pr-4 pl-3 text-white md:bg-transparent text-white md:p-0  md:py-3 capitalize "
+                >о Нас</a>
               </li>
               <li>
-                <a href="#"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 capitalize ">фирмы</a>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center block py-4 border-b border-transparent duration-200 hover:border-white pr-4 pl-3 text-white md:bg-transparent text-white md:p-0  md:py-3 capitalize">фирмы <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-[#0F172A] text-white rounded divide-y  shadow ">
+                    <ul class="py-1 text-sm" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="./allFirma.html" class="block py-2 px-4 hover:bg-gray-800">Amiran Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-800">ProHome Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-800">Wool Products</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-800">Best Wool Company</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-800">Best Food Company</a>
+                      </li>
+                    </ul>
+                   
+                </div>
+                <a href="./allFirma.html"
+                class=" "
+                ></a>
               </li>
               <li>
                 <a href="./blog.html"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  capitalize ">Блог</a>
+                class="block py-4 border-b border-transparent duration-200 hover:border-white pr-4 pl-3 text-white md:bg-transparent text-white md:p-0  md:py-3 capitalize "
+                >Блог</a>
               </li>
               <li>
-                <a href="./contact.html" aria-current="page"
-                  class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  capitalize ">Контакт</a>
+                <a href="./contact.html"
+                class="block py-4 border-b border-transparent duration-200 hover:border-white pr-4 pl-3 text-white md:bg-transparent text-white md:p-0  md:py-3 capitalize "
+                >Контакт</a>
               </li>
             </ul>
           </div>
@@ -188,7 +176,7 @@
       </nav>
 
       <div
-        class="header__content bg-[url('./project/image/blog-single/blog-single-bg.png')]  md:mt-0 pt-32 pb-40 md:py-40 md:pb-50 text-white bg-no-repeat bg-cover">
+        class="header__content bg-[url('./project/image/blog-single/blog-single-bg.png')] bg-fixed bg-top md:mt-0 pt-32 pb-40 md:py-40 md:pb-50 text-white bg-no-repeat bg-cover">
         <div class=" w-full h-full">
           <div  data-aos="fade-right" data-aos-delay="100"  class="container mx-auto text-white cursor-pointer">
             <h2 class="text-3xl md:text-[45px] font-bold capitalize mb-3">О НАС</h2>
@@ -206,10 +194,10 @@
       <section class="pt-[45px] md:pt-[90px]">
         <div class="container mx-auto">
           <div class="text-center">
-            <h2 data-aos="fade-up" data-aos-delay="50" class="text-3xl text-white capitalize font-semibold mb-5 ">
+            <h2 data-aos="fade-up" data-aos-delay="50" class="text-2xl text-white capitalize font-semibold mb-5 section-title">
               amiran group
             </h2>
-            <p data-aos="fade-up" data-aos-delay="160" class=" text-lg md:text-xl text-white">
+            <p data-aos="fade-up" data-aos-delay="160" class=" text-base text-white">
               Но помимо аппетитного бизнеса, Wild Fork предлагает душевное спокойствие как здоровую альтернативу мясу для потребителей, заботящихся о своем здоровье. И его страница "О нас" отлично справляется с тем, чтобы рассказать нам, как именно она это делает,  с помощью:
             </p>
           </div>
@@ -219,29 +207,29 @@
       <section class="py-[45px] product md:py-[90px]">
         <div class="container mx-auto">
           <h2 data-aos="fade-up" data-aos-delay="100"
-            class="text-xl md:text-3xl text-white font-bold text-center mb-10 uppercase">
+            class="text-xl md:text-3xl text-white font-bold text-center mb-10 uppercase section-title">
             наши партнеры
           </h2>
           <div class="w-full swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- <div data-aos-delay="50" data-aos="fade-up"
+              <div data-aos-delay="50" data-aos="fade-up"
                 class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
                 <div  class=" flex items-center justify-center card" onclick="card(this)" >
                   <img class="w-full h-[200px] object-cover card__img" src="./project/image/partner/Rectangle 147.png" alt="">
                 </div>
-              </div> -->
+              </div>
               <div data-aos-delay="100" data-aos="fade-up"
                 class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
                 <div  class="flex items-center justify-center" onclick="card(this)">
                   <img class="w-full h-[200px] object-cover card__img" src="./project/image/partner/Rectangle 148.png" alt="">
                 </div>
               </div>
-              <!-- <div data-aos-delay="150" data-aos="fade-up"
+              <div data-aos-delay="150" data-aos="fade-up"
                 class="w-full h-full rounded-md swiper-slide duration-1000 ease-in">
                 <div  class=" flex items-center justify-center card" onclick="card(this)">
                   <img  class="w-full h-[200px] object-cover card__img " src="./project/image/partner/Rectangle 149.png" alt="">
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -251,8 +239,7 @@
 
 
     <footer class=" bg-slate-900 md:pt-[60px] pt-7 pb-5 relative">
-      <a href="#nav"
-        class="bg-white py-2 px-3 rounded-full flex justify-center items-center inline-flex absolute right-8 top-[60px] text-white">
+      <a href="#header" class="bg-white scroll-smooth py-2 px-3 rounded-full flex justify-center items-center inline-flex absolute right-8 top-[60px] text-white">
         <i class="ri-arrow-up-s-line text-slate-900 text-3xl"></i>
       </a>
       <div class="container mx-auto">
@@ -263,7 +250,7 @@
             </a>
           </div>
           <div class="sm:w-full md:w-3/4 grid grid-cols-2 gap-8 sm:grid-cols-3">
-            <div class=" col-span-2 sm:col-span-1">
+            <div class=" col-span-2 sm:col-span-1" >
               <h2 class="mb-6 text-sm font-semibold text-white uppercase ">Amiran Group</h2>
               <ul class="text-white ">
                 <li class="mb-2.5">
@@ -323,13 +310,18 @@
           <span class="text-sm  sm:text-center ">© 2022 <a href="#" class="hover:underline">AMIRAN</a> все
             права защищены
           </span>
-          <span class="text-sm  sm:text-center "> Создания сайта Веб студия <a href="#" class="hover:underline">MARSS
-              TEAM</a>
-          </span>
+          <div class="flex items-center sm:text-center">
+            <span class="text-sm mr-2"> Создания сайта Веб студия 
+            </span>
+            <a href="#"
+                class="hover:underline"><img class="w-20 h-8" src="./project/image/MT.png" alt="">
+            </a>
+          </div>
 
         </div>
       </div>
     </footer>
+
 
 
   </div>

@@ -3,6 +3,12 @@ tailwind.config = {
 
 
       theme: {
+
+        colors: {
+          gold:'#DBEC19',
+          currentColor:'#213258',
+        },
+
         extend: {
           container: {
             padding: {
