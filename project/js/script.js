@@ -80,14 +80,21 @@ counters.forEach( counter => {
       const time = value / speed;
      if(data < value) {
           counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
+          setTimeout(animate, 4);
         }else{
           counter.innerText = value;
         }
-     
+
+        console.log(counter.clientHeight);
    }
-   
    animate();
 });
 
+window.addEventListener('scroll', function () { 
+  if (window.pageYOffset > 100) { 
+    toTop.style.display = "flex" 
+  } else { 
+    toTop.style.display = "none" 
+  } 
+})
 
