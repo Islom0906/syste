@@ -132,6 +132,14 @@ html {
     border-width: 1px;
 }
 
+.section__text {
+  overflow: hidden; 
+  width: 100%; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical; 
+}
+
 /* section__title */
 
 
