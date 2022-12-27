@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded" , () => {
       loader.style.display = "none";
     }, 1500);
   }, 2000);
+})
 
   window.addEventListener('scroll' ,  () => {
     let navbar = document.querySelector('.nav');
@@ -15,7 +16,7 @@ window.addEventListener("DOMContentLoaded" , () => {
     
     
 
-  const counters = document.querySelectorAll('.value');
+const counters = document.querySelectorAll('.value');
 const speed = 200;
 
 counters.forEach( counter => {
@@ -30,17 +31,7 @@ counters.forEach( counter => {
         }else{
           counter.innerText = value;
         }
-
-        console.log(counter.clientHeight);
    }
    animate();
 });
-
-window.addEventListener('scroll', function () { 
-  if (window.pageYOffset > 100) { 
-    toTop.style.display = "flex" 
-  } else { 
-    toTop.style.display = "none" 
-  } 
-})
 
