@@ -145,6 +145,41 @@ background: linear-gradient(180deg, #009DD4 0%, #CAEAF7 49.2%, #C2E7F5 100%, rgb
   object-fit: contain;
 }
 
+
+/* Loader */
+
+.loader-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba( 15, 23, 42 ) ;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-page img {
+  animation: 2s laoding infinite;
+}
+
+@keyframes laoding {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
 @media (max-width:1024px){
   .zoom-img{
     width: 100%;
